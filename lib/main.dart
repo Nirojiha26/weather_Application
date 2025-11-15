@@ -96,7 +96,7 @@ class _WeatherHomePageState extends State<WeatherHomePage>
   Color getTempColor(double temp) {
     if (temp <= 15) return Colors.blue;
     if (temp <= 28) return Colors.green;
-    return Colors.red;
+    return const Color.fromARGB(255, 236, 22, 7);
   }
 
   Future<void> fetchWeather() async {
